@@ -20,7 +20,7 @@ class hw(unittest.TestCase):
         self.Open_home_page(wd)
         self.login(wd, username="admin", password="secret")
         self.open_groups_page(wd)
-        self.create_group(wd, Group( name="Home Work", header="test1", footer="test2"))
+        self.create_group(wd, Group(name="Home Work", header="test1", footer="test2"))
         # submit group creation
         wd.find_element_by_name("submit").click()
         self.return_to_groups_page(wd)
